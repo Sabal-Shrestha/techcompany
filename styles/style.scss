@@ -1,0 +1,91 @@
+:root {
+  font-size: 62.5%;
+  --h1-font-size: clamp(5.2rem, 3vw, 7.2rem);
+  --h2-font-size: clamp(2.5rem, 2.5vw, 4.15rem);
+  --h3-font-size: clamp(2rem, 2vw, 3.83rem);
+  --p-h4-font-size: clamp(1.5rem, 1.5vw, 3.35rem);
+  --h5-font-size: clamp(1.3rem, 1.3vw, 3.03rem);
+  --h6-font-size: clamp(1.1rem, 1.1vw, 2.87rem);
+  --color-primary: #086ad8;
+  --color-secondary: #4199ff;
+  --color-accent: #001d23;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+html {
+  scroll-behavior: smooth;
+  --top-spacing: 5.5rem;
+  scroll-padding-top: var(--top-spacing);
+}
+body {
+  /* font-family: "Manrope", sans-serif; */
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+section {
+  padding: 2rem 0;
+}
+p {
+  text-align: var(--p-h4-font-size);
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: var(--h1-font-size);
+}
+h2 {
+  font-size: var(--h2-font-size);
+}
+h3 {
+  font-size: var(--h3-font-size);
+}
+h4 {
+  font-size: var(--p-h4-font-size);
+}
+h5 {
+  font-size: var(--h5-font-size);
+}
+h6 {
+  font-size: var(--h6-font-size);
+}
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+}
+.btn-all {
+  display: inline-block;
+  font-size: var(--h6-font-size);
+  padding: 0rem 2.9rem;
+  background-color: var(--color-primary);
+  border: 2px solid transparent;
+  color: #fff;
+  line-height: 5.6rem;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: var(--color-accent);
+  }
+}
+.primary-color {
+  background-color: var(--color-primary);
+}
+.secondary-color {
+  background-color: var(--color-secondary);
+}
+.accent-color {
+  background-color: var(--color-accent);
+}
