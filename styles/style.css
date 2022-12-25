@@ -91,7 +91,6 @@ video {
   color: #fff;
   line-height: 5.6rem;
   transition: background-color 0.5s;
-  border-radius: 1rem;
 }
 .btn-all:hover {
   background-color: var(--color-accent);
