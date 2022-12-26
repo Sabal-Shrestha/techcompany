@@ -13,60 +13,149 @@
     />
 
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <h5>Heading 5</h5>
-      <h6>Heading 6</h6>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim nihil
-        soluta nobis distinctio eligendi voluptatem quaerat corporis! Nesciunt
-        minus voluptas reprehenderit cum ratione. Vel quia accusamus odio,
-        laudantium reprehenderit ipsam.
-      </p>
-      <ul>
-        <li>Hello</li>
-        <li>Hello</li>
-        <li>Hello</li>
-        <li>Hello</li>
-        <li>Hello</li>
-        <li>Hello</li>
-      </ul>
-      <a href="" class="btn-all">Link with a button style</a>
-      <button class="btn-all">Button with button style</button>
-      <br /><br />
-      <div class="primary-color">
-        <h2>Primary Color</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-          tempore, alias quod maxime culpa dolorem? Labore fugiat voluptate
-          maiores eius ea? Ea animi, doloribus quaerat et ab corporis ad
-          possimus?
-        </p>
+    <header class="sticky-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">TechCompany</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Service</a>
+              <a class="nav-link" href="#">Contact</a>
+            </div>
+          </div>
+          <button class="btn-all d-none d-lg-block">Get A Quote</button>
+        </nav>
       </div>
-      <div class="secondary-color">
-        <h2>Secondary Color</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-          tempore, alias quod maxime culpa dolorem? Labore fugiat voluptate
-          maiores eius ea? Ea animi, doloribus quaerat et ab corporis ad
-          possimus?
-        </p>
-      </div>
-      <div class="accent-color">
-        <h2>Accent Color</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-          tempore, alias quod maxime culpa dolorem? Labore fugiat voluptate
-          maiores eius ea? Ea animi, doloribus quaerat et ab corporis ad
-          possimus?
-        </p>
-      </div>
-    </div>
+    </header>
+    <main class="index">
+      <section class="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-5">
+              <p><span>//</span> BEST IT SOLUTION PROVIDER</p>
+              <h1>Best Advanced Tech Company<span>.</span></h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis, repellat.
+              </p>
+              <a href="" class="btn-all">Get in Touch + </a>
+            </div>
+            <div class="col-12 col-md-6">
+              <img src="./img/placeholder-banner.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="service">
+        <div class="container">
+          <div class="section-heading">
+            <p><span>//</span> SERVICES <span>//</span></p>
+            <h2>Services</h2>
+            <p>Data Analytics, Content & IT Managed Service<span>.</span></p>
+          </div>
+          <div class="row g-4 g-md-5 justify-content-around">
+            <div class="col-12 col-lg-6">
+              <div class="card">
+                <img src="./img/placeholder.webp" alt="" />
+                <h3>Advanced Analytics</h3>
+                <p>
+                  Today, the term Information Technology (IT) has ballooned to
+                  encompass many aspects of computing and technology.
+                </p>
+                <ul>
+                  <li>The Information Technology Umbrella</li>
+                  <li>Can Be Quite Large, Covering Many Fields</li>
+                  <li>IT Professionals Perform A Variety</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="card">
+                <img src="./img/placeholder.webp" alt="" />
+                <h3>Advanced Analytics</h3>
+                <p>
+                  Today, the term Information Technology (IT) has ballooned to
+                  encompass many aspects of computing and technology.
+                </p>
+                <ul>
+                  <li>The Information Technology Umbrella</li>
+                  <li>Can Be Quite Large, Covering Many Fields</li>
+                  <li>IT Professionals Perform A Variety</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-us">
+        <div class="container-fluid">
+          <div class="row g-4 g-md-5">
+            <div class="col-12 col-lg-6">
+              <img src="./img/about-bg-1.webp" alt="" />
+            </div>
+            <div class="col-12 col-lg-5">
+              <div class="section-heading">
+                <p><span>//</span> About Us</p>
+                <h2>About Us</h2>
+                <p>We've Been Thriving In 38 Years<span>.</span></p>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+              </p>
+              <div class="row g-4 g-md-5">
+                <div class="col-6">
+                  <div class="card">
+                    <i class="fa fa-computer"></i>
+                    <h3>Business Idea</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card">
+                    <i class="fa fa-computer"></i>
+                    <h3>Business Idea</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="why-choose-us">
+        <div class="container">
+          <div class="section-heading">
+            <p><span>//</span> Hire us, why not<span>//</span></p>
+            <h2>Hire Us</h2>
+            <p>Data Analytics, Content & IT Managed Service<span>.</span></p>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

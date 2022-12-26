@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
 :root {
   font-size: 62.5%;
-  --h1-font-size: clamp(5.2rem, 3vw, 7.2rem);
-  --h2-font-size: clamp(2.5rem, 2.5vw, 4.15rem);
-  --h3-font-size: clamp(2rem, 2vw, 3.83rem);
-  --p-h4-font-size: clamp(1.5rem, 1.5vw, 3.35rem);
+  --h1-font-size: clamp(5.2rem, 4vw, 9.2rem);
+  --h2-font-size: clamp(2.5rem, 3vw, 4.1rem);
+  --h3-font-size: clamp(2rem, 2.5vw, 3.83rem);
+  --p-h4-font-size: clamp(1.5rem, 2vw, 3.35rem);
   --h5-font-size: clamp(1.3rem, 1.3vw, 3.03rem);
   --h6-font-size: clamp(1.1rem, 1.1vw, 2.87rem);
   --color-primary: #086ad8;
@@ -28,22 +30,26 @@ html {
   scroll-padding-top: var(--top-spacing);
 }
 body {
-  /* font-family: "Manrope", sans-serif; */
+  font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   overflow-x: hidden;
   line-height: 1.5;
 }
 section {
-  padding: 2rem 0;
+  padding: 10rem 0;
 }
 p {
   text-align: var(--p-h4-font-size);
+}
+span {
+  color: var(--color-primary);
 }
 a {
   text-decoration: none;
 }
 h1 {
   font-size: var(--h1-font-size);
+  font-weight: 700;
 }
 h2 {
   font-size: var(--h2-font-size);
@@ -89,4 +95,45 @@ video {
 }
 .accent-color {
   background-color: var(--color-accent);
+}
+header {
+  background-color: #fff;
+  .nav-link {
+    margin-right: 3rem;
+    font-weight: 500;
+    color: var(--color-accent);
+  }
+}
+.section-heading {
+  text-align: center;
+  position: relative;
+  margin-bottom: 6rem;
+  p:first-of-type {
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(7rem, 10vw, 16rem);
+    color: #f5f9fa;
+    top: -43px;
+    z-index: -1;
+    letter-spacing: -3px;
+    line-height: 130px;
+    width: 100%;
+  }
+  p:nth-of-type(2) {
+    font-size: clamp(2.5rem, 5vw, 6rem);
+    line-height: 1.3;
+    font-weight: 500;
+    width: 50%;
+    margin: auto;
+  }
+  @media (width <=576px) {
+    p:nth-of-type(2) {
+      width: 100%;
+    }
+  }
 }
