@@ -88,8 +88,14 @@
 .index .about-us .row .col-12:nth-of-type(2) .row .card {
   padding: 2rem;
   border: none;
-  background: #fff;
-  position: relative;
+  background-image: linear-gradient(90deg, var(--color-primary) 0, var(--color-primary) 95%);
+  background-size: 0 4px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.5s ease;
+}
+.index .about-us .row .col-12:nth-of-type(2) .row .card:hover {
+  background-size: 100% 4px;
 }
 .index .about-us .row .col-12:nth-of-type(2) .row .card i {
   font-size: var(--h1-font-size);
