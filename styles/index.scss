@@ -148,6 +148,7 @@
         }
         h3 {
           font-size: var(--p-h4-font-size);
+          transition: color 0.5s ease-in-out;
         }
         .ok {
           position: absolute;
@@ -168,6 +169,68 @@
       &:hover .ok {
         opacity: 1;
         top: 95%;
+      }
+    }
+  }
+  .team-members {
+    .card {
+      position: relative;
+      // overflow: hidden;
+      border: none;
+      border-top-left-radius: 1.5rem;
+      border-top-right-radius: 1.5rem;
+      .card-image {
+        position: relative;
+        &:hover .social {
+          visibility: visible;
+          opacity: 1;
+          bottom: 0px;
+        }
+        img {
+          border-top-left-radius: 1.5rem;
+          border-top-right-radius: 1.5rem;
+          width: 100%;
+          z-index: 0;
+        }
+        .social {
+          position: absolute;
+          text-align: center;
+          list-style: none;
+          margin: 0;
+          padding: 1rem 0;
+          z-index: 3;
+          bottom: -5rem;
+          transition: 0.5s;
+          width: 100%;
+          left: 0;
+          background-color: var(--color-accent);
+          visibility: hidden;
+          opacity: 0;
+          li {
+            display: inline-block;
+            margin: 0 0.5rem;
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 50%;
+            width: 4rem;
+            height: 4rem;
+            i {
+              font-size: var(--h6-font-size);
+            }
+          }
+        }
+      }
+      .card-body {
+        background: var(--color-secondary);
+        text-align: center;
+        h3 {
+          font-size: var(--h5-font-size);
+        }
+        h4 {
+          font-size: var(--h6-font-size);
+          color: #7a7e9a;
+          font-weight: 300;
+        }
       }
     }
   }
