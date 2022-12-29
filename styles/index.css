@@ -207,7 +207,7 @@
   height: 4rem;
 }
 .index .team-members .card .card-image .social li i {
-  font-size: var(--h6-font-size);
+  font-size: clamp(1.7rem, 1.1vw, 2.5rem);
   color: var(--color-primary);
 }
 .index .team-members .card:hover .card-body::before {
@@ -222,6 +222,7 @@
   position: relative;
   background: var(--color-secondary);
   text-align: center;
+  padding: 2rem;
   z-index: 0;
 }
 .index .team-members .card .card-body::before {
@@ -246,4 +247,36 @@
   transition: 0.5s ease;
   color: #7a7e9a;
   font-weight: 300;
+}
+.index .blogs .card {
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.0509803922);
+  border: none;
+}
+.index .blogs .card .card-body {
+  background: linear-gradient(var(--color-primary) 0 0) no-repeat, linear-gradient(var(--color-primary) 0 0) no-repeat;
+  background-size: 4px 0%, 4px 0%;
+  background-position: left bottom, top right;
+  transition: background-size 1s;
+  padding: 1.5rem;
+}
+.index .blogs .card .card-body:hover {
+  background-size: 4px 100%, 4px 100%;
+}
+.index .blogs .card .card-body p:first-of-type {
+  color: grey;
+  font-size: var(--h6-font-size);
+}
+.index .blogs .card .card-body p:first-of-type span {
+  margin: 0 1rem;
+}
+.index .blogs .card .card-body h3 {
+  font-size: var(--h5-font-size);
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+.index .blogs .card .card-body p:nth-of-type(2) {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }/*# sourceMappingURL=index.css.map */

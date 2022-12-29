@@ -7,7 +7,7 @@
   --h3-font-size: clamp(2rem, 2.5vw, 3.83rem);
   --p-h4-font-size: clamp(1.5rem, 2vw, 3.35rem);
   --h5-font-size: clamp(1.3rem, 1.3vw, 3.03rem);
-  --h6-font-size: clamp(1.1rem, 1.1vw, 2.87rem);
+  --h6-font-size: clamp(1.1rem, 1.1vw, 2.5rem);
   --color-primary: #086ad8;
   --color-secondary: #c0e6f0;
   --color-accent: #051242;
@@ -123,6 +123,9 @@ header {
     letter-spacing: -3px;
     line-height: 130px;
     width: 100%;
+    @media (width<=576px) {
+      line-height: 1.2;
+    }
   }
   p:nth-of-type(2) {
     font-size: clamp(2.5rem, 5vw, 6rem);
