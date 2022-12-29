@@ -21,7 +21,7 @@
 }
 .index .service .card {
   border: 2px solid #f5f9fa;
-  padding: 3rem;
+  padding: 2.5rem;
   text-align: center;
   line-height: 3rem;
   height: 100%;
@@ -34,7 +34,7 @@
   text-align: left;
 }
 .index .service .card ul li {
-  padding-left: 1.3em;
+  padding-left: 1.3rem;
   margin-bottom: 2rem;
   transition: background-color 0.5s;
 }
@@ -53,7 +53,7 @@
     padding: 0rem;
   }
   .index .service .card ul {
-    padding-left: 1.5rem;
+    padding-left: 0rem;
   }
   .index .service .card ul li {
     padding-left: 0;
