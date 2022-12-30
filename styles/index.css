@@ -163,6 +163,9 @@
   opacity: 1;
   top: 95%;
 }
+.index .video {
+  background-color: var(--color-secondary);
+}
 .index .work-progress .box-progress {
   text-align: center;
   position: relative;
