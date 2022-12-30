@@ -163,6 +163,50 @@
   opacity: 1;
   top: 95%;
 }
+.index .work-progress .box-progress {
+  text-align: center;
+  position: relative;
+}
+.index .work-progress .box-progress .icon {
+  background: #1e2a55;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 56px;
+  margin-bottom: 30px;
+  border-radius: 3px;
+  position: relative;
+}
+.index .work-progress .box-progress .icon span {
+  position: absolute;
+  z-index: 1;
+}
+@media (width <= 991px) {
+  .index .work-progress .box-progress .icon span {
+    display: none;
+  }
+}
+.index .work-progress .box-progress .icon span::before {
+  content: "";
+  position: absolute;
+  content: "";
+  height: 170px;
+  border-right: 1px dashed black;
+  transform: rotate(90deg);
+  top: -55px;
+  left: 122px;
+  z-index: -1;
+}
+.index .work-progress .box-progress .icon span img {
+  max-width: 100px;
+  margin-left: 100px;
+  -webkit-animation: leftani 5s infinite linear;
+  animation: leftani 5s infinite linear;
+}
+.index .work-progress .box-progress .content h3 {
+  font-size: var(--p-h4-font-size);
+  margin-bottom: 1.5rem;
+}
 .index .team-members .card {
   border: none;
   border-top-left-radius: 1.5rem;
@@ -266,7 +310,7 @@
   color: grey;
   font-size: var(--h6-font-size);
 }
-.index .blogs .card .card-body p:first-of-type span {
+.index .blogs .card .card-body p:first-of-type .vr {
   margin: 0 1rem;
 }
 .index .blogs .card .card-body h3 {

@@ -172,6 +172,53 @@
       }
     }
   }
+  .work-progress {
+    .box-progress {
+      text-align: center;
+      position: relative;
+      .icon {
+        background: #1e2a55;
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        line-height: 56px;
+        margin-bottom: 30px;
+        border-radius: 3px;
+        position: relative;
+        span {
+          @media (width<=991px) {
+            display: none;
+          }
+          position: absolute;
+          z-index: 1;
+          &::before {
+            content: "";
+            position: absolute;
+            content: "";
+            height: 170px;
+            border-right: 1px dashed black;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+            top: -55px;
+            left: 122px;
+            z-index: -1;
+          }
+          img {
+            max-width: 100px;
+            margin-left: 100px;
+            -webkit-animation: leftani 5s infinite linear;
+            animation: leftani 5s infinite linear;
+          }
+        }
+      }
+      .content {
+        h3 {
+          font-size: var(--p-h4-font-size);
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
   .team-members {
     .card {
       // overflow: hidden;
@@ -281,7 +328,7 @@
         p:first-of-type {
           color: grey;
           font-size: var(--h6-font-size);
-          span {
+          .vr {
             margin: 0 1rem;
           }
         }
