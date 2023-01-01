@@ -152,7 +152,10 @@ header {
 }
 footer {
   padding: 5rem 0rem 1rem;
-  background-color: var(--color-accent);
+  // background-color: var(--color-accent);
+  background: url("../img/footer-bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
   @media (width <= 576px) {
     h2,

@@ -78,14 +78,14 @@
 .index .about-us .row .section-heading p:nth-of-type(2) {
   width: 100%;
 }
-.index .about-us .row .col-12:nth-of-type(2) > p {
+.index .about-us .row .col:nth-of-type(2) > p {
   border-left: 2px solid var(--color-primary);
   padding-left: 2rem;
 }
-.index .about-us .row .col-12:nth-of-type(2) .row {
+.index .about-us .row .col:nth-of-type(2) .row {
   margin-top: 1rem;
 }
-.index .about-us .row .col-12:nth-of-type(2) .row .card {
+.index .about-us .row .col:nth-of-type(2) .row .card {
   padding: 2rem;
   border: none;
   background-image: linear-gradient(90deg, var(--color-primary) 0, var(--color-primary) 95%);
@@ -94,13 +94,13 @@
   background-position: left bottom;
   transition: background-size 0.5s ease;
 }
-.index .about-us .row .col-12:nth-of-type(2) .row .card:hover {
+.index .about-us .row .col:nth-of-type(2) .row .card:hover {
   background-size: 100% 4px;
 }
-.index .about-us .row .col-12:nth-of-type(2) .row .card i {
+.index .about-us .row .col:nth-of-type(2) .row .card i {
   font-size: var(--h1-font-size);
 }
-.index .about-us .row .col-12:nth-of-type(2) .row .card h3 {
+.index .about-us .row .col:nth-of-type(2) .row .card h3 {
   font-size: var(--h6-font-size);
   margin: 1.5rem 0;
 }
