@@ -209,8 +209,15 @@
           img {
             max-width: 100px;
             margin-left: 100px;
-            -webkit-animation: leftani 5s infinite linear;
-            animation: leftani 5s infinite linear;
+            animation: leftani 5s linear infinite alternate none running;
+            @keyframes leftani {
+              0% {
+                transform: translateX(0);
+              }
+              100% {
+                transform: translateX(100%);
+              }
+            }
           }
         }
       }
@@ -264,7 +271,7 @@
             width: 4rem;
             height: 4rem;
             i {
-              font-size: clamp(1.7rem, 1.1vw, 2.5rem);
+              font-size: var(--social-icon-font-size);
               color: var(--color-primary);
             }
           }

@@ -203,8 +203,24 @@
 .index .work-progress .box-progress .icon span img {
   max-width: 100px;
   margin-left: 100px;
-  -webkit-animation: leftani 5s infinite linear;
-  animation: leftani 5s infinite linear;
+  -webkit-animation: leftani 5s linear infinite alternate none running;
+          animation: leftani 5s linear infinite alternate none running;
+}
+@-webkit-keyframes leftani {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes leftani {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 .index .work-progress .box-progress .content h3 {
   font-size: var(--p-h4-font-size);
@@ -254,7 +270,7 @@
   height: 4rem;
 }
 .index .team-members .card .card-image .social li i {
-  font-size: clamp(1.7rem, 1.1vw, 2.5rem);
+  font-size: var(--social-icon-font-size);
   color: var(--color-primary);
 }
 .index .team-members .card:hover .card-body::before {
