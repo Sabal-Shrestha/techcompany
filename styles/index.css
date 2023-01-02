@@ -1,8 +1,6 @@
 .index .hero {
   padding: 0;
-  background: url("../img/hero-banner-bg.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: var(--background);
 }
 .index .hero .container .row {
   justify-content: space-around;
@@ -20,7 +18,8 @@
   margin-bottom: 3rem;
 }
 .index .service .card {
-  border: 2px solid #f5f9fa;
+  border: none;
+  box-shadow: 0 0 20px 3px var(--card-box-shadow);
   padding: 2.5rem;
   text-align: center;
   line-height: 3rem;
@@ -60,14 +59,6 @@
     margin-left: 0;
   }
 }
-.index .about-us {
-  background: linear-gradient(90deg, #fff 15%, #f8f8f8 15%);
-}
-@media (width <= 991px) {
-  .index .about-us {
-    background: #f8f8f8;
-  }
-}
 .index .about-us .row {
   align-items: center;
 }
@@ -85,16 +76,17 @@
 .index .about-us .row .col:nth-of-type(2) .row {
   margin-top: 1rem;
 }
-.index .about-us .row .col:nth-of-type(2) .row .card {
+.index .about-us .row .col:nth-of-type(2) .row .card .card-body {
   padding: 2rem;
   border: none;
+  box-shadow: 0 0 20px 3px var(--card-box-shadow);
   background-image: linear-gradient(90deg, var(--color-primary) 0, var(--color-primary) 95%);
   background-size: 0 4px;
   background-repeat: no-repeat;
   background-position: left bottom;
-  transition: background-size 0.5s ease;
+  transition: background-size 1s ease;
 }
-.index .about-us .row .col:nth-of-type(2) .row .card:hover {
+.index .about-us .row .col:nth-of-type(2) .row .card .card-body:hover {
   background-size: 100% 4px;
 }
 .index .about-us .row .col:nth-of-type(2) .row .card i {
@@ -104,17 +96,17 @@
   font-size: var(--h6-font-size);
   margin: 1.5rem 0;
 }
-.index .why-choose-us .box-info {
+.index .hire-us .box-info {
   position: relative;
 }
-.index .why-choose-us .box-info:hover .card::before {
+.index .hire-us .box-info:hover .card::before {
   bottom: 0;
   height: 100%;
 }
-.index .why-choose-us .box-info:hover .card h3 {
-  color: #fff;
+.index .hire-us .box-info:hover .card h3 {
+  color: var(--clr-light);
 }
-.index .why-choose-us .box-info .card {
+.index .hire-us .box-info .card {
   position: relative;
   max-width: 85%;
   margin: auto;
@@ -124,10 +116,11 @@
   border: none;
   border-radius: 4px;
   z-index: 1;
-  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-  transition: 0.5s;
+  box-shadow: 0 0 20px 3px var(--card-box-shadow);
+  background: var(--background);
+  color: var(--foreground);
 }
-.index .why-choose-us .box-info .card::before {
+.index .hire-us .box-info .card::before {
   position: absolute;
   content: "";
   bottom: 100%;
@@ -140,16 +133,16 @@
   transition: 0.5s ease;
   z-index: -1;
 }
-.index .why-choose-us .box-info .card h3 {
+.index .hire-us .box-info .card h3 {
   font-size: var(--p-h4-font-size);
   transition: color 0.5s ease-in-out;
 }
-.index .why-choose-us .box-info .card .ok {
+.index .hire-us .box-info .card .ok {
   position: absolute;
   width: 3.5rem;
   height: 3.5rem;
   background: var(--color-accent);
-  color: #fff;
+  color: var(--clr-light);
   border-radius: 50%;
   line-height: 3.5rem;
   text-align: center;
@@ -159,7 +152,7 @@
   opacity: 0;
   transition: 0.3s;
 }
-.index .why-choose-us .box-info:hover .ok {
+.index .hire-us .box-info:hover .ok {
   opacity: 1;
   top: 95%;
 }
@@ -194,7 +187,7 @@
   position: absolute;
   content: "";
   height: 170px;
-  border-right: 1px dashed black;
+  border-right: 1px dashed var(--foreground);
   transform: rotate(90deg);
   top: -55px;
   left: 122px;
@@ -225,6 +218,44 @@
 .index .work-progress .box-progress .content h3 {
   font-size: var(--p-h4-font-size);
   margin-bottom: 1.5rem;
+}
+.index .why-choose-us .row {
+  align-items: center;
+}
+.index .why-choose-us .row .col img {
+  -webkit-animation: rotating-image 100s linear infinite both;
+          animation: rotating-image 100s linear infinite both;
+}
+@-webkit-keyframes rotating-image {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes rotating-image {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+.index .why-choose-us .row .col p:first-of-type {
+  margin-bottom: 3rem;
+}
+.index .why-choose-us .row .col .d-flex {
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.index .why-choose-us .row .col .d-flex .choose-icon {
+  font-size: var(--h1-font-size);
+  margin-right: 3rem;
+  color: var(--color-accent);
+}
+.index .why-choose-us .row .col .d-flex .choose-info p {
+  margin-bottom: 0;
 }
 .index .team-members .card {
   border: none;
@@ -263,7 +294,7 @@
 .index .team-members .card .card-image .social li {
   display: inline-block;
   margin: 0 0.5rem;
-  background-color: #fff;
+  background-color: var(--clr-light);
   padding: 1rem;
   border-radius: 50%;
   width: 4rem;
@@ -279,7 +310,7 @@
 }
 .index .team-members .card:hover .card-body h3,
 .index .team-members .card:hover .card-body h4 {
-  color: #fff;
+  color: var(--clr-light);
 }
 .index .team-members .card .card-body {
   position: relative;
@@ -312,7 +343,7 @@
   font-weight: 300;
 }
 .index .blogs .card {
-  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.0509803922);
+  box-shadow: 0 0 20px 3px var(--card-box-shadow);
   border: none;
 }
 .index .blogs .card .card-body {
@@ -334,7 +365,6 @@
 }
 .index .blogs .card .card-body h3 {
   font-size: var(--h5-font-size);
-  color: var(--color-accent);
   margin-bottom: 1rem;
 }
 .index .blogs .card .card-body p:nth-of-type(2) {
