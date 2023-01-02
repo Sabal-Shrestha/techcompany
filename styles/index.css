@@ -76,10 +76,12 @@
 .index .about-us .row .col:nth-of-type(2) .row {
   margin-top: 1rem;
 }
-.index .about-us .row .col:nth-of-type(2) .row .card .card-body {
-  padding: 2rem;
+.index .about-us .row .col:nth-of-type(2) .row .card {
   border: none;
   box-shadow: 0 0 20px 3px var(--card-box-shadow);
+}
+.index .about-us .row .col:nth-of-type(2) .row .card .card-body {
+  padding: 2rem;
   background-image: linear-gradient(90deg, var(--color-primary) 0, var(--color-primary) 95%);
   background-size: 0 4px;
   background-repeat: no-repeat;
