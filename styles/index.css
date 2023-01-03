@@ -249,6 +249,12 @@
 .index .why-choose-us .row .col .d-flex .choose-info p {
   margin-bottom: 0;
 }
+.index .portfolio .row .col {
+  margin-bottom: 1.5rem;
+}
+.index .portfolio .row .col .card p {
+  margin-bottom: 0;
+}
 .index .team-members .card {
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;

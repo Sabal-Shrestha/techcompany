@@ -258,6 +258,18 @@
       }
     }
   }
+  .portfolio {
+    .row {
+      .col {
+        margin-bottom: 1.5rem;
+        .card {
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
   .team-members {
     .card {
       border-top-left-radius: 1.5rem;
