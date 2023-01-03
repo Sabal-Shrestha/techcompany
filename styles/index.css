@@ -18,8 +18,6 @@
   margin-bottom: 3rem;
 }
 .index .service .card {
-  border: none;
-  box-shadow: 0 0 20px 3px var(--card-box-shadow);
   padding: 2.5rem;
   text-align: center;
   line-height: 3rem;
@@ -76,10 +74,6 @@
 .index .about-us .row .col:nth-of-type(2) .row {
   margin-top: 1rem;
 }
-.index .about-us .row .col:nth-of-type(2) .row .card {
-  border: none;
-  box-shadow: 0 0 20px 3px var(--card-box-shadow);
-}
 .index .about-us .row .col:nth-of-type(2) .row .card .card-body {
   padding: 2rem;
   background-image: linear-gradient(90deg, var(--color-primary) 0, var(--color-primary) 95%);
@@ -115,12 +109,8 @@
   padding: 3rem;
   text-align: center;
   margin-top: -4rem;
-  border: none;
   border-radius: 4px;
   z-index: 1;
-  box-shadow: 0 0 20px 3px var(--card-box-shadow);
-  background: var(--background);
-  color: var(--foreground);
 }
 .index .hire-us .box-info .card::before {
   position: absolute;
@@ -260,7 +250,6 @@
   margin-bottom: 0;
 }
 .index .team-members .card {
-  border: none;
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
 }
@@ -343,10 +332,6 @@
   transition: 0.5s ease;
   color: #7a7e9a;
   font-weight: 300;
-}
-.index .blogs .card {
-  box-shadow: 0 0 20px 3px var(--card-box-shadow);
-  border: none;
 }
 .index .blogs .card .card-body {
   background: linear-gradient(var(--color-primary) 0 0) no-repeat, linear-gradient(var(--color-primary) 0 0) no-repeat;

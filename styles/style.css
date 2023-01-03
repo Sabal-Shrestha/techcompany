@@ -11,9 +11,9 @@
   --social-icon-font-size: clamp(1.7rem, 1.1vw, 2.5rem);
   --footer-heading-font-size: clamp(2rem, 2vw, 3.35rem);
   --clr-light: #fff;
-  --clr-dark: #0e0e0e;
-  --clr-about-bg: #f8f8f8;
-  --card-box-shadow: #0000000d;
+  --clr-dark: #23272f;
+  --card-background: #fff;
+  --card-box-shadow: 0 0 20px 3px #0000000d;
   --color-primary: #086ad8;
   --color-secondary: #c0e6f0;
   --color-accent: #051242;
@@ -23,10 +23,8 @@
 }
 
 .darkmode {
-  --clr-light: #fff;
-  --clr-dark: #0e0e0e;
-  --clr-about-bg: #0e0e0e;
-  --card-box-shadow: #000;
+  --card-background: #000;
+  --card-box-shadow: 0 0 5px 0px #000;
   --color-primary: #086ad8;
   --color-secondary: #001b7e;
   --color-accent: #051242;
@@ -192,8 +190,10 @@ header .btn-all {
 }
 
 .card {
-  background: var(--background);
+  background: var(--card-background);
   color: var(--foreground);
+  box-shadow: var(--card-box-shadow);
+  border: none;
 }
 
 footer {
