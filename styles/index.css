@@ -89,7 +89,6 @@
   font-size: var(--h1-font-size);
 }
 .index .about-us .row .col:nth-of-type(2) .row .card h3 {
-  font-size: var(--h6-font-size);
   margin: 1.5rem 0;
 }
 .index .hire-us .box-info {
@@ -126,7 +125,6 @@
   z-index: -1;
 }
 .index .hire-us .box-info .card h3 {
-  font-size: var(--p-h4-font-size);
   transition: color 0.5s ease-in-out;
 }
 .index .hire-us .box-info .card .ok {
@@ -208,7 +206,6 @@
   }
 }
 .index .work-progress .box-progress .content h3 {
-  font-size: var(--p-h4-font-size);
   margin-bottom: 1.5rem;
 }
 .index .why-choose-us .row {
@@ -249,11 +246,37 @@
 .index .why-choose-us .row .col .d-flex .choose-info p {
   margin-bottom: 0;
 }
+.index .portfolio .button-group {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.index .portfolio .button-group .button {
+  border: none;
+  font-size: var(--h3-font-size);
+  background-color: var(--background);
+  color: var(--foreground);
+  margin-right: 2rem;
+}
+.index .portfolio .button-group .button:last-of-type {
+  margin-right: 0rem;
+}
+.index .portfolio .button-group .is-checked {
+  font-weight: 500;
+  border-bottom: 0.4rem solid var(--color-primary);
+  color: var(--color-primary);
+}
 .index .portfolio .row .col {
   margin-bottom: 1.5rem;
 }
-.index .portfolio .row .col .card p {
-  margin-bottom: 0;
+.index .portfolio .row .col .card {
+  position: relative;
+  height: 100%;
+}
+.index .portfolio .row .col .card h3 + p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .index .team-members .card {
   border-top-left-radius: 1.5rem;
@@ -330,7 +353,7 @@
   z-index: -1;
 }
 .index .team-members .card .card-body h3 {
-  font-size: var(--h5-font-size);
+  font-size: var(--p-h4-font-size);
   transition: 0.5s ease;
 }
 .index .team-members .card .card-body h4 {
@@ -357,7 +380,6 @@
   margin: 0 1rem;
 }
 .index .blogs .card .card-body h3 {
-  font-size: var(--h5-font-size);
   margin-bottom: 1rem;
 }
 .index .blogs .card .card-body p:nth-of-type(2) {
