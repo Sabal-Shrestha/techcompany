@@ -4,10 +4,10 @@
   font-size: 62.5%;
   --h1-font-size: clamp(5.2rem, 4vw, 9.2rem);
   --h2-font-size: clamp(2.5rem, 3vw, 4.1rem);
-  --h3-font-size: clamp(2rem, 1.7vw, 3.8rem);
-  --p-h4-font-size: clamp(1.3rem, 1.5vw, 3rem);
-  --h5-font-size: clamp(1.3rem, 1.3vw, 3.03rem);
-  --h6-font-size: clamp(1.1rem, 1.1vw, 2.5rem);
+  --h3-font-size: clamp(2rem, 1.7vw, 3rem);
+  --p-h4-font-size: clamp(1.6rem, 1.3vw, 2.5rem);
+  --h5-font-size: clamp(1.3rem, 1.1vw, 2rem);
+  --h6-font-size: clamp(1.1rem, 1vw, 1.6rem);
   --social-icon-font-size: clamp(1.7rem, 1.1vw, 2.5rem);
   --footer-heading-font-size: clamp(2rem, 2vw, 3.35rem);
 
@@ -63,9 +63,8 @@ section {
   padding: 10rem 0 2rem;
 }
 p {
-  text-align: var(--p-h4-font-size);
   color: var(--foreground);
-  font-size: var(--h6-font-size);
+  font-size: var(--p-h4-font-size);
 }
 span {
   color: var(--color-primary);
