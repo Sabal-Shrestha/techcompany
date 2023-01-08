@@ -136,6 +136,12 @@ header {
   .btn-all {
     line-height: 2.6;
   }
+  .form-switch {
+    position: fixed;
+    font-size: var(--h2-font-size);
+    bottom: 0;
+    left: 5%;
+  }
 }
 .section-heading {
   text-align: center;
