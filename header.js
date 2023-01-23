@@ -18,9 +18,9 @@ class MyHeader extends HTMLElement {
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav mx-auto">
-              <a class="nav-link" href="/">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
               <a class="nav-link" href="about-us.html">About Us</a>
-              <a class="nav-link" href="#">Service</a>
+              <a class="nav-link" href="services.html">Services</a>
               <a class="nav-link" href="blogs.html">Blogs</a>
               <a class="nav-link" href="#">Contact</a>
             </div>
