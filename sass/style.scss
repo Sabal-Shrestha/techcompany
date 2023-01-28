@@ -134,6 +134,9 @@ header {
       color: var(--color-primary);
     }
   }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
   .dropdown-item {
     font-size: var(--p-h4-font-size);
   }

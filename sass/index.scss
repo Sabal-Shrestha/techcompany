@@ -15,6 +15,17 @@
         p:nth-of-type(2) {
           margin-bottom: 3rem;
         }
+        img {
+          animation: rotating-image 100s linear infinite both;
+          @keyframes rotating-image {
+            0% {
+              rotate: 0deg;
+            }
+            100% {
+              rotate: 360deg;
+            }
+          }
+        }
       }
     }
   }
@@ -31,7 +42,7 @@
         list-style: none;
         text-align: left;
         li {
-          padding-left: 1.3rem;
+          // padding-left: 1.3rem;
           margin-bottom: 2rem;
           transition: background-color 0.5s;
           &:before {
@@ -218,41 +229,41 @@
       }
     }
   }
-  .why-choose-us {
-    .row {
-      align-items: center;
-      .col {
-        img {
-          animation: rotating-image 100s linear infinite both;
-          @keyframes rotating-image {
-            0% {
-              rotate: 0deg;
-            }
-            100% {
-              rotate: 360deg;
-            }
-          }
-        }
-        p:first-of-type {
-          margin-bottom: 3rem;
-        }
-        .d-flex {
-          align-items: center;
-          margin-bottom: 2rem;
-          .choose-icon {
-            font-size: var(--h1-font-size);
-            margin-right: 3rem;
-            color: var(--color-accent);
-          }
-          .choose-info {
-            p {
-              margin-bottom: 0;
-            }
-          }
-        }
-      }
-    }
-  }
+  // .why-choose-us {
+  //   .row {
+  //     align-items: center;
+  //     .col {
+  //       img {
+  //         animation: rotating-image 100s linear infinite both;
+  //         @keyframes rotating-image {
+  //           0% {
+  //             rotate: 0deg;
+  //           }
+  //           100% {
+  //             rotate: 360deg;
+  //           }
+  //         }
+  //       }
+  //       p:first-of-type {
+  //         margin-bottom: 3rem;
+  //       }
+  //       .d-flex {
+  //         align-items: center;
+  //         margin-bottom: 2rem;
+  //         .choose-icon {
+  //           font-size: var(--h1-font-size);
+  //           margin-right: 3rem;
+  //           color: var(--color-accent);
+  //         }
+  //         .choose-info {
+  //           p {
+  //             margin-bottom: 0;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
   .portfolio {
     .button-group {
       text-align: center;
