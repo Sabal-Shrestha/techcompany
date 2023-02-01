@@ -302,6 +302,7 @@
     }
   }
   .team-members {
+    background-color: var(--color-secondary);
     .card {
       border-top-left-radius: 1.5rem;
       border-top-right-radius: 1.5rem;
@@ -353,15 +354,11 @@
             bottom: 0%;
             height: 100%;
           }
-          h3,
-          h4 {
-            color: var(--clr-light);
-          }
         }
       }
       .card-body {
         position: relative;
-        background: var(--color-secondary);
+        background: var(--color-primary);
         text-align: center;
         padding: 2rem;
         z-index: 0;
@@ -380,12 +377,14 @@
         }
         h3 {
           font-size: var(--p-h4-font-size);
+          color: var(--clr-light);
           transition: 0.5s ease;
         }
         h4 {
           font-size: var(--h6-font-size);
           transition: 0.5s ease;
-          color: #7a7e9a;
+          color: #fff;
+          // color: #7a7e9a;
           font-weight: 300;
         }
       }
