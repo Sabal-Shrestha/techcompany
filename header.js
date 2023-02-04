@@ -32,6 +32,7 @@ class MyHeader extends HTMLElement {
                 <li><a class="dropdown-item" href="logo-graphics-design.html">Logo Design and Graphics Design</a></li>
               </ul>
             </li>
+              <a class="nav-link" href="pricing.html">Pricing</a>
               <a class="nav-link" href="blogs.html">Blogs</a>
               <a class="nav-link" href="#">Contact</a>
             </div>
