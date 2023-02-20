@@ -1,10 +1,10 @@
 class MyHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <header class="sticky-top">
+      <header class="sticky-top py-0">
       <div class="container">
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="/">TechCompany</a>
+          <a class="navbar-brand" href="/"><img width="80px" src="./img/etonel-logo-temp.webp"/></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -34,10 +34,10 @@ class MyHeader extends HTMLElement {
             </li>
               <a class="nav-link" href="pricing.html">Pricing</a>
               <a class="nav-link" href="blogs.html">Blogs</a>
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
             </div>
           </div>
-          <button class="btn-all d-none d-lg-block">Get A Quote</button>
+          <a href="tel:9822938045" class="btn-all d-none d-lg-block"><i class="fa-solid fa-phone"></i> 9822938045</a>
           <div class="form-switch">
             <input
               class="form-check-input dark-mode-toggle"

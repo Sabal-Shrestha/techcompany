@@ -5,57 +5,42 @@ class MyFooter extends HTMLElement {
       <div class="container">
         <div class="row g-4 g-md-5">
           <div class="col-12 col-md-6 col-lg-4">
-            <h2>Tech Company</h2>
+            <h2>Etonel</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
-              reiciendis!
+            We are here to provide you with everlasting digital experiences.
             </p>
             <div class="socials">
-              <a href="/"><i class="fab fa-facebook-f"></i></a>
-              <a href="/"><i class="fab fa-facebook-f"></i></a>
-              <a href="/"><i class="fab fa-facebook-f"></i></a>
-              <a href="/"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100090161113381"><i class="fab fa-facebook-f"></i></a>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
             <h3>Our Service</h3>
             <ul>
-              <li><a href="/">Development</a></li>
-              <li><a href="/">Development</a></li>
-              <li><a href="/">Development</a></li>
-              <li><a href="/">Development</a></li>
-              <li><a href="/">Development</a></li>
-              <li><a href="/">Development</a></li>
+            <li><a href="hardware-consultation-solution.html">Hardware Consultation and Solution</a></li>
+            <li><a href="networking-security-surveillance-solution.html">Networking and Security Surveillance Solution</a></li>
+            <li><a href="website-design.html">Website Design</a></li>
+            <li><a href="logo-graphics-design.html">Logo Design and Graphics Design</a></li>
             </ul>
           </div>
           <div class="col-12 col-md-6 col-lg-2">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="/">FAQs</a></li>
-              <li><a href="/">FAQs</a></li>
-              <li><a href="/">FAQs</a></li>
-              <li><a href="/">FAQs</a></li>
-              <li><a href="/">FAQs</a></li>
-              <li><a href="/">FAQs</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="blogs.html">Blogs</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
             <h3>Contact</h3>
             <ul>
               <li>
-                <a href="/"><i class="fab fa-facebook-f"></i>Phone</a>
+                <a href="tel:9822938045"><i class="fa-solid fa-phone"></i>9822938045</a>
               </li>
               <li>
-                <a href="/"><i class="fab fa-facebook-f"></i>Phone</a>
-              </li>
-              <li>
-                <a href="/"><i class="fab fa-facebook-f"></i>Phone</a>
-              </li>
-              <li>
-                <a href="/"><i class="fab fa-facebook-f"></i>Phone</a>
-              </li>
-              <li>
-                <a href="/"><i class="fab fa-facebook-f"></i>Phone</a>
+                <a href="https://goo.gl/maps/kBCqeNANVbs2h7Vr5" rel="noopener" target="_blank"><i class="fas fa-map-marker-alt"></i>Kathmandu</a>
               </li>
             </ul>
           </div>
@@ -64,8 +49,7 @@ class MyFooter extends HTMLElement {
       <hr />
       <div class="container pt-3">
         <p class="text-center">
-          Copyright @2022 TechCompany. Designed By Sabal Shrestha (Temporary
-          Self Promotion)
+          Copyright @2022 Etonel.
         </p>
       </div>
     </footer>
