@@ -15,8 +15,7 @@
   --clr-light: #fff;
   --clr-dark: #23272f;
   --card-background: #fff;
-  --card-box-shadow: 0 0 20px 3px #0000000d;
-
+  --card-box-shadow: 0 0 10px 3px #0000000d;
   --color-primary: #086ad8;
   --color-secondary: #c0e6f0;
   --color-accent: #051242;
@@ -143,13 +142,26 @@ video {
 header {
   background-color: var(--background);
   padding: 1rem 0;
-  .nav-link {
-    margin-right: 3rem;
-    font-weight: 500;
-    color: var(--foreground);
-    transition: color 0.8s;
-    &:hover {
-      color: var(--color-primary);
+  .navbar {
+    .navbar-brand {
+      img {
+        width: 5vw;
+        @media (max-width: 991px) {
+          width: 7vw;
+        }
+        @media (max-width: 576px) {
+          width: 15vw;
+        }
+      }
+    }
+    .nav-link {
+      margin-right: 3rem;
+      font-weight: 500;
+      color: var(--foreground);
+      transition: color 0.8s;
+      &:hover {
+        color: var(--color-primary);
+      }
     }
   }
   .dropdown:hover .dropdown-menu {
