@@ -37,7 +37,7 @@ class MyHeader extends HTMLElement {
               <a class="nav-link" href="contact-us.html">Contact Us</a>
             </div>
           </div>
-          <a href="tel:9822938045" class="btn-all d-none d-lg-block"><i class="fa-solid fa-phone"></i> 9822938045</a>
+          <a href="tel:9822938045" class="btn-all d-none d-lg-block"><i class="fa-solid fa-phone"> </i> +9822938045</a>
           <div class="form-switch">
             <input
               class="form-check-input dark-mode-toggle"

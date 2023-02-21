@@ -1,0 +1,33 @@
+.single-post {
+  padding-bottom: 2rem;
+  h1 {
+    text-align: center;
+  }
+  img {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  .share-links {
+    span {
+      font-size: var(--h3-font-size);
+      margin-right: 0.5rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      display: inline-flex;
+    }
+    i {
+      background-color: var(--color-primary);
+      width: var(--h2-font-size);
+      height: var(--h2-font-size);
+      line-height: var(--h2-font-size);
+      font-size: var(--p-h4-font-size);
+      text-align: center;
+      border-radius: 50%;
+      color: #fff;
+      margin-right: 1rem;
+    }
+  }
+}
