@@ -24,7 +24,7 @@
         margin-right: auto;
       }
       .single-post .share-links span {
-        font-size: var(--h3-font-size);
+        font-size: var(--h3-fontsize);
         margin-right: 0.5rem;
       }
       .single-post .share-links ul {
@@ -37,7 +37,7 @@
         background-color: var(--color-primary);
         border-radius: 50%;
         color: #fff;
-        font-size: var(--h5-font-size);
+        font-size: var(--h5-fontsize);
         margin-right: 1rem;
       }
     </style>

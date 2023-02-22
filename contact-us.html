@@ -11,6 +11,19 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./styles/style.min.css" />
+    <style>
+      #contact .row .col {
+        text-align: center;
+      }
+      #contact .row .col i {
+        font-size: var(--h1-fontsize);
+        color: var(--color-primary);
+        margin-bottom: 2rem;
+      }
+      #contact .row .col h2 {
+        font-size: var(--h3-fontsize);
+      }
+    </style>
   </head>
   <body>
     <script src="header.js"></script>
@@ -23,14 +36,42 @@
             <p>Contact</p>
             <p>Get In Touch With Us<span>.</span></p>
           </div>
-          <h2>Phone Number</h2>
+          <div class="row g-4 g-md-5 row-cols-1 row-cols-md-3">
+            <div class="col">
+              <i class="fa-solid fa-phone"></i>
+              <h2>Phone Number</h2>
+              <p>
+                <a href="tel:9822938045">+ 9822938045</a>
+              </p>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-envelope"></i>
+              <h2>Email</h2>
+              <p>
+                <a href="mailto:info@etonel.com">info@etonel.com</a>
+              </p>
+            </div>
+            <div class="col">
+              <i class="fas fa-map-marker-alt"></i>
+              <h2>Address</h2>
+              <p>
+                <a
+                  href="https://goo.gl/maps/kBCqeNANVbs2h7Vr5"
+                  rel="noopener"
+                  target="_blank"
+                  >Kathmandu</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- <h2>Phone Number</h2>
           <p>
             <a href="tel:9822938045"
               ><i class="fa-solid fa-phone"></i>9822938045</a
             >
           </p>
           <h2>Address</h2>
-          <p>Kathmandu</p>
+          <p>Kathmandu</p> -->
         </div>
       </section>
     </main>

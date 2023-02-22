@@ -3,14 +3,14 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
 :root {
   font-size: 62.5%;
-  --h1-font-size: clamp(5.2rem, 4vw, 9.2rem);
-  --h2-font-size: clamp(2.5rem, 3vw, 4.1rem);
-  --h3-font-size: clamp(2rem, 1.7vw, 3rem);
-  --p-h4-font-size: clamp(1.6rem, 1.3vw, 2.5rem);
-  --h5-font-size: clamp(1.3rem, 1.1vw, 2rem);
-  --h6-font-size: clamp(1.1rem, 1vw, 1.6rem);
-  --social-icon-font-size: clamp(1.7rem, 1.1vw, 2.5rem);
-  --footer-heading-font-size: clamp(2rem, 2vw, 3.35rem);
+  --h1-fontsize: clamp(5.2rem, 4vw, 9.2rem);
+  --h2-fontsize: clamp(2.5rem, 3vw, 4.1rem);
+  --h3-fontsize: clamp(2rem, 1.7vw, 3rem);
+  --p-h4-fontsize: clamp(1.6rem, 1.3vw, 2.5rem);
+  --h5-fontsize: clamp(1.3rem, 1.1vw, 2rem);
+  --h6-fontsize: clamp(1.1rem, 1vw, 1.6rem);
+  --social-icon-fontsize: clamp(1.7rem, 1.1vw, 2.5rem);
+  --footer-heading-fontsize: clamp(2rem, 2vw, 3.35rem);
 
   --clr-light: #fff;
   --clr-dark: #23272f;
@@ -82,7 +82,7 @@ section {
 }
 p {
   color: var(--foreground);
-  font-size: var(--p-h4-font-size);
+  font-size: var(--p-h4-fontsize);
 }
 span {
   color: var(--color-primary);
@@ -91,23 +91,23 @@ a {
   text-decoration: none;
 }
 h1 {
-  font-size: var(--h1-font-size);
+  font-size: var(--h1-fontsize);
   font-weight: 700;
 }
 h2 {
-  font-size: var(--h2-font-size);
+  font-size: var(--h2-fontsize);
 }
 h3 {
-  font-size: var(--h3-font-size);
+  font-size: var(--h3-fontsize);
 }
 h4 {
-  font-size: var(--p-h4-font-size);
+  font-size: var(--p-h4-fontsize);
 }
 h5 {
-  font-size: var(--h5-font-size);
+  font-size: var(--h5-fontsize);
 }
 h6 {
-  font-size: var(--h6-font-size);
+  font-size: var(--h6-fontsize);
 }
 img,
 picture,
@@ -118,7 +118,7 @@ video {
 }
 .btn-all {
   display: inline-block;
-  font-size: var(--h6-font-size);
+  font-size: var(--h6-fontsize);
   padding: 0rem 2.9rem;
   background-color: var(--color-primary);
   border: 1px solid var(--color-primary);
@@ -171,14 +171,14 @@ header {
     background-color: rgba(255, 255, 255, 0.664);
   }
   .dropdown-item {
-    font-size: var(--h5-font-size);
+    font-size: var(--h5-fontsize);
   }
   .btn-all {
     line-height: 2.6;
   }
   .form-switch {
     position: fixed;
-    font-size: var(--h2-font-size);
+    font-size: var(--h2-fontsize);
     bottom: 0;
     left: 5%;
   }
@@ -190,7 +190,7 @@ header {
   h2,
   h1 {
     text-transform: uppercase;
-    font-size: var(--p-h4-font-size);
+    font-size: var(--p-h4-fontsize);
     width: fit-content;
     margin: 0 auto;
     padding: 0 0.5rem;
@@ -254,7 +254,7 @@ footer {
       i {
         border-radius: 0.5rem;
         background-color: var(--color-primary);
-        font-size: var(--social-icon-font-size);
+        font-size: var(--social-icon-fontsize);
         display: inline-block;
         padding: 1rem 1.3rem;
         margin-right: 1.3rem;
@@ -264,7 +264,7 @@ footer {
   h3 {
     position: relative;
     z-index: 1;
-    font-size: var(--footer-heading-font-size);
+    font-size: var(--footer-heading-fontsize);
     margin-bottom: 2.5rem;
     padding-left: 1.5rem;
     &::before {
@@ -308,7 +308,7 @@ footer {
         i {
           border-radius: 0.5rem;
           background-color: var(--color-primary);
-          font-size: var(--social-icon-font-size);
+          font-size: var(--social-icon-fontsize);
           display: inline-block;
           padding: 0.7rem 1rem;
           margin: 0rem 1.5rem 1.5rem 0rem;
