@@ -10,6 +10,7 @@ class MyFooter extends HTMLElement {
             We are here to provide you with everlasting digital experiences.
             </p>
             <div class="socials">
+            <p>Follow Us on:</p>
               <a href="https://www.facebook.com/profile.php?id=100090161113381" target="_blank"><i class="fab fa-facebook-f"></i></a>
             </div>
           </div>
