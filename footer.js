@@ -5,32 +5,32 @@ class MyFooter extends HTMLElement {
       <div class="container">
         <div class="row g-4 g-md-5">
           <div class="col-12 col-md-6 col-lg-4">
-            <h2>Etonel</h2>
+            <h3>Etonel</h3>
             <p>
             We are here to provide you with everlasting digital experiences.
             </p>
             <div class="socials">
-              <a href="https://www.facebook.com/profile.php?id=100090161113381"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100090161113381" target="_blank"><i class="fab fa-facebook-f"></i></a>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
             <h3>Our Service</h3>
             <ul>
-            <li><a href="hardware-consultation-solution.html">Hardware Consultation and Solution</a></li>
-            <li><a href="networking-security-surveillance-solution.html">Networking and Security Surveillance Solution</a></li>
-            <li><a href="website-design.html">Website Design</a></li>
-            <li><a href="logo-graphics-design.html">Logo Design and Graphics Design</a></li>
+            <li><a href="../hardware-consultation-solution.html">Hardware Consultation and Solution</a></li>
+            <li><a href="../networking-security-surveillance-solution.html">Networking and Security Surveillance Solution</a></li>
+            <li><a href="../website-design.html">Website Design</a></li>
+            <li><a href="../logo-graphics-design.html">Logo Design and Graphics Design</a></li>
             </ul>
           </div>
           <div class="col-12 col-md-6 col-lg-2">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="about-us.html">About Us</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="pricing.html">Pricing</a></li>
-              <li><a href="blogs.html">Blogs</a></li>
-              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="../">Home</a></li>
+              <li><a href="../about-us.html">About Us</a></li>
+              <li><a href="../services.html">Services</a></li>
+              <li><a href="../pricing.html">Pricing</a></li>
+              <li><a href="../blogs/index.html">Blogs</a></li>
+              <li><a href="../contact-us.html">Contact Us</a></li>
             </ul>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
