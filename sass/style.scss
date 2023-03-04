@@ -142,11 +142,11 @@ video {
 }
 header {
   background-color: var(--background);
-  padding: 1rem 0;
+  padding: 0;
   .navbar {
     .navbar-brand {
       img {
-        width: 5vw;
+        width: 4.5vw;
         @media (max-width: 991px) {
           width: 7vw;
         }
@@ -155,13 +155,16 @@ header {
         }
       }
     }
-    .nav-link {
-      margin-right: 3rem;
-      font-weight: 500;
-      color: var(--foreground);
-      transition: color 0.8s;
-      &:hover {
-        color: var(--color-primary);
+    .nav-item {
+      .nav-link {
+        font-size: var(--h5-fontsize);
+        margin-right: 3rem;
+        font-weight: 500;
+        color: var(--foreground);
+        transition: color 0.8s;
+        &:hover {
+          color: var(--color-primary);
+        }
       }
     }
   }
@@ -229,6 +232,9 @@ header {
   color: var(--foreground);
   box-shadow: var(--card-box-shadow);
   border: none;
+  .card-body {
+    padding: 2rem;
+  }
 }
 footer {
   padding: 5rem 0rem 1rem;
