@@ -87,7 +87,6 @@ class MyHeader extends HTMLElement {
               type="checkbox"
               role="switch"
               id="dark-mode-toggle"
-              checked
             />
           </div>
         </div>

@@ -2,6 +2,9 @@ class MyFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <footer>
+      <button class="go-to-top-btn" onclick="goToTop()" id="goToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
       <div class="container">
         <div class="row g-4 g-md-5">
           <div class="col-12 col-md-6 col-lg-4">
