@@ -360,3 +360,82 @@ footer {
     color: var(--clr-light);
   }
 }
+#services {
+  img {
+    margin: 1.5rem 0;
+  }
+  .row p {
+    text-align: justify;
+  }
+  .sidebar {
+    position: sticky;
+    top: 10rem;
+    height: 80vh;
+    .services {
+      p {
+        font-weight: 500;
+        font-size: var(--h3-fontsize);
+      }
+      ul {
+        padding-left: 0;
+        li {
+          position: relative;
+          list-style-type: none;
+          font-size: var(--h5-fontsize);
+          &:hover {
+            &:after {
+              width: 100%;
+            }
+            a {
+              color: #fff;
+            }
+          }
+          &::after {
+            content: "";
+            background: linear-gradient(
+              270deg,
+              #2981e9 0%,
+              var(--color-primary) 100%
+            );
+            position: absolute;
+            height: 100%;
+            width: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            transition: width 0.5s ease-in-out;
+            z-index: 1;
+          }
+          a {
+            display: block;
+            color: var(--foreground);
+            border: 1px solid rgba(189, 188, 191, 0.35);
+            margin-bottom: 1.5rem;
+            padding: 1rem 1.5rem;
+            transition: color 0.5s ease-in-out;
+            position: relative;
+            z-index: 2;
+            &.active {
+              border-color: var(--color-primary);
+            }
+          }
+        }
+      }
+    }
+    .opening-hours {
+      background: url("../img/opeining-hours.webp") #23272fb8;
+      background-blend-mode: multiply;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 10%;
+      color: #fff;
+      p:first-of-type {
+        font-size: var(--h3-fontsize);
+      }
+      p {
+        color: #fff;
+        font-size: var(--p-h4-font-size);
+      }
+    }
+  }
+}

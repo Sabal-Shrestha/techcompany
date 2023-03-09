@@ -11,41 +11,13 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./styles/style.min.css" />
-    <style>
-      #services img {
-        margin: 1.5rem 0;
-      }
-      #services .row p {
-        text-align: justify;
-      }
-      #services .sidebar {
-        position: sticky;
-        top: 10rem;
-        height: 80vh;
-      }
-      #services ul li {
-        position: relative;
-        list-style-type: none;
-      }
-      #services .opening-hours {
-        background: url("./img/opeining-hours.webp") #23272fb8;
-        background-blend-mode: multiply;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50% 10%;
-        color: #fff;
-      }
-      #services .opening-hours p {
-        color: #fff;
-        font-size: var(--p-h4-font-size);
-      }
-    </style>
+    <style></style>
   </head>
   <body>
     <script src="header.js"></script>
     <my-header></my-header>
     <main id="services">
-      <section class="services-hardware">
+      <section>
         <div class="container">
           <div class="section-heading">
             <h1>Hardware Consultation</h1>
@@ -111,21 +83,24 @@
               </p>
             </div>
             <div class="sidebar col-12 col-lg-4">
-              <div class="card">
+              <div class="card services">
                 <div class="card-body">
+                  <p>Our Services</p>
                   <ul>
                     <li>
                       <a href="./services.html">All Services</a>
                     </li>
                     <li>
-                      <a href="./hardware-consultation-solution.html"
+                      <a
+                        class="active"
+                        href="./hardware-consultation-solution.html"
                         >Hardware Consultation and Solution</a
                       >
                     </li>
                     <li>
                       <a href="./networking-security-surveillance-solution.html"
-                        >Networking and Security Surveillance Solution</a
-                      >
+                        >Networking and Security Surveillance Solution
+                      </a>
                     </li>
                     <li>
                       <a href="./website-design.html">Website Design</a>
@@ -141,7 +116,7 @@
               <br />
               <div class="card opening-hours">
                 <div class="card-body">
-                  <h3>Opening Hours</h3>
+                  <p>Opening Hours</p>
                   <p>Sunday - Friday: 9:00 am to 5:00 pm</p>
                   <p>Saturday: Closed</p>
                 </div>
