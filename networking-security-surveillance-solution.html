@@ -13,8 +13,97 @@
     <link rel="stylesheet" href="./styles/style.min.css" />
   </head>
   <body>
-    <script src="header.js"></script>
-    <my-header></my-header>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="./" aria-label="Logo of Etonel"
+            ><img src="./img/etonel-logo-temp.webp"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item mx-auto">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about-us.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <span
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </span>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./services.html"
+                      >All Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./hardware-consultation-solution.html"
+                      >Hardware Consultation and Solution</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./networking-security-surveillance-solution.html"
+                      >Networking and Security Surveillance Solution</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./website-design.html"
+                      >Website Design</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./logo-graphics-design.html"
+                      >Logo Design and Graphics Design</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blogs/index.html">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <a href="tel:9822938045" class="btn-all d-none d-lg-block"
+            ><i class="fa-solid fa-phone"> </i> +9822938045</a
+          >
+          <div class="form-switch">
+            <input
+              class="form-check-input dark-mode-toggle"
+              type="checkbox"
+              role="switch"
+              id="dark-mode-toggle"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
     <main id="services">
       <section>
         <div class="container">
@@ -35,12 +124,12 @@
           </p>
           <div class="row">
             <div class="col-12 col-lg-8">
-              <img src="./img/services-placeholder.webp" alt="" />
               <p>
                 Our networking and security surveillance solution includes the
                 following services:
               </p>
               <h2>Network Security Assessment</h2>
+              <img src="./img/network-security-assessment.webp" alt="" />
               <p>
                 Our experts will perform a thorough analysis of your current
                 network security infrastructure to identify any vulnerabilities
@@ -48,34 +137,44 @@
                 outlining any security risks and recommended solutions to
                 mitigate these risks.
               </p>
+              <hr />
               <h2>Firewall Configuration</h2>
+              <img src="./img/firewell-configuration.webp" alt="" />
               <p>
                 Our team will configure a customized firewall solution that
                 meets your specific business needs. This will help protect your
                 network from potential security threats such as malware,
                 viruses, and hacking attempts.
               </p>
+              <hr />
               <h2>VPN Setup</h2>
+              <img src="./img/vpn-setup.webp" alt="" />
               <p>
                 We'll set up a virtual private network (VPN) to enable secure
                 remote access to your business network. This will allow you and
                 your employees to work from anywhere while maintaining the
                 security and integrity of your network.
               </p>
+              <hr />
               <h2>Surveillance System Installation</h2>
+              <img src="./img/surveillance-system-installation.webp" alt="" />
               <p>
                 We'll install state-of-the-art security cameras and other
                 surveillance equipment to ensure that your business is monitored
                 24/7. Our team will also configure and maintain the system to
                 ensure optimal performance.
               </p>
+              <hr />
               <h2>Access Control Systems</h2>
+              <img src="./img/access-control-systems.webp" alt="" />
               <p>
                 We offer a variety of access control systems to restrict entry
                 to specific areas of your business. Our solutions include key
                 card access, biometric scanners, and more.
               </p>
+              <hr />
               <h2>Security Consulting</h2>
+              <img src="./img/security-consulting.webp" alt="" />
               <p>
                 Our experts will provide ongoing consulting and support to help
                 you maintain a secure network environment. We'll keep you
@@ -124,6 +223,7 @@
               </div>
             </div>
           </div>
+          <hr />
           <p>
             At Etonel, we understand that every business is unique, which is why
             we offer customized solutions tailored to your specific needs.

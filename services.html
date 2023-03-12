@@ -22,8 +22,97 @@
     </style>
   </head>
   <body>
-    <script src="header.js"></script>
-    <my-header></my-header>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="./" aria-label="Logo of Etonel"
+            ><img src="./img/etonel-logo-temp.webp"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item mx-auto">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about-us.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <span
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </span>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./services.html"
+                      >All Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./hardware-consultation-solution.html"
+                      >Hardware Consultation and Solution</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./networking-security-surveillance-solution.html"
+                      >Networking and Security Surveillance Solution</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./website-design.html"
+                      >Website Design</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./logo-graphics-design.html"
+                      >Logo Design and Graphics Design</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blogs/index.html">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <a href="tel:9822938045" class="btn-all d-none d-lg-block"
+            ><i class="fa-solid fa-phone"> </i> +9822938045</a
+          >
+          <div class="form-switch">
+            <input
+              class="form-check-input dark-mode-toggle"
+              type="checkbox"
+              role="switch"
+              id="dark-mode-toggle"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
     <main id="services">
       <section class="services-grid">
         <div class="container">
@@ -36,7 +125,7 @@
           </div>
           <div class="row row-cols-1 row-cols-lg-2 g-4 g-md-5">
             <div class="cols">
-              <img src="./img/why-us-placeholder.webp" alt="" />
+              <img src="./img/hardware-consultation.webp" alt="" />
             </div>
             <div class="cols">
               <h2>Hardware consultation and solution</h2>
@@ -48,12 +137,13 @@
                 servers, and electronic devices. Contact us today for affordable
                 and convenient solutions.
               </p>
-              <a href="index.html">Learn More</a>
+              <a href="hardware-consultation-solution.html">Learn More</a>
             </div>
           </div>
+          <hr />
           <div class="row row-cols-1 row-cols-lg-2 g-4 g-md-5">
             <div class="cols order-lg-1">
-              <img src="./img/why-us-placeholder.webp" alt="" />
+              <img src="./img/network-solution.webp" alt="" />
             </div>
             <div class="cols order-lg-0">
               <h2>Networking and security surveillance solution</h2>
@@ -65,12 +155,15 @@
                 installation, access control systems, and ongoing security
                 consulting and support. Contact us today to learn more.
               </p>
-              <a href="index.html">Learn More</a>
+              <a href="networking-security-surveillance-solution.html"
+                >Learn More</a
+              >
             </div>
           </div>
+          <hr />
           <div class="row row-cols-1 row-cols-lg-2 g-4 g-md-5">
             <div class="cols">
-              <img src="./img/why-us-placeholder.webp" alt="" />
+              <img src="./img/website-design.webp" alt="" />
             </div>
             <div class="cols">
               <h2>Website Design</h2>
@@ -82,12 +175,13 @@
                 smoothly. Contact them to learn more about their web design
                 services.
               </p>
-              <a href="index.html">Learn More</a>
+              <a href="website-design.html">Learn More</a>
             </div>
           </div>
+          <hr />
           <div class="row row-cols-1 row-cols-lg-2 g-4 g-md-5">
             <div class="cols order-lg-1">
-              <img src="./img/why-us-placeholder.webp" alt="" />
+              <img src="./img/logo-graphics-design.webp" alt="" />
             </div>
             <div class="cols order-lg-0">
               <h2>Logo design and graphics design</h2>
@@ -102,7 +196,7 @@
                 us to learn more about our services and how we can help create a
                 powerful visual identity for your business.
               </p>
-              <a href="index.html">Learn More</a>
+              <a href="logo-graphics-design.html">Learn More</a>
             </div>
           </div>
         </div>

@@ -13,8 +13,97 @@
     <link rel="stylesheet" href="./styles/style.min.css" />
   </head>
   <body>
-    <script src="header.js"></script>
-    <my-header></my-header>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="./" aria-label="Logo of Etonel"
+            ><img src="./img/etonel-logo-temp.webp"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item mx-auto">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about-us.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <span
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </span>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./services.html"
+                      >All Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./hardware-consultation-solution.html"
+                      >Hardware Consultation and Solution</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./networking-security-surveillance-solution.html"
+                      >Networking and Security Surveillance Solution</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./website-design.html"
+                      >Website Design</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./logo-graphics-design.html"
+                      >Logo Design and Graphics Design</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blogs/index.html">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <a href="tel:9822938045" class="btn-all d-none d-lg-block"
+            ><i class="fa-solid fa-phone"> </i> +9822938045</a
+          >
+          <div class="form-switch">
+            <input
+              class="form-check-input dark-mode-toggle"
+              type="checkbox"
+              role="switch"
+              id="dark-mode-toggle"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
     <main id="services">
       <section>
         <div class="container">
@@ -31,34 +120,33 @@
           </p>
           <div class="row">
             <div class="col-12 col-lg-8">
-              <img src="./img/services-placeholder.webp" alt="" />
               <p>Our logo design services include:</p>
               <h2>Custom logo design</h2>
+              <img src="./img/custom-logo-design.webp" alt="" />
               <p>
                 We will work with you to create a unique logo that reflects your
                 brand and communicates your message to your target audience.
               </p>
+              <hr />
               <h2>Brand identity design</h2>
+              <img src="./img/brand-identity-design.webp" alt="" />
               <p>
                 In addition to logo design, we can help you develop a
                 comprehensive brand identity that includes color schemes,
                 typography, and visual elements that work together to create a
                 cohesive and recognizable brand.
               </p>
+              <hr />
               <h2>Logo redesign</h2>
+              <img src="./img/logo-resign.webp" alt="" />
               <p>
                 If you have an existing logo that needs a refresh or update, we
                 can help you redesign your logo to better reflect your brand and
                 appeal to your target audience.
               </p>
-              <h2>Hardware maintenance:</h2>
-              <p>
-                We offer regular hardware maintenance services to keep your
-                electronic devices running smoothly and prevent potential
-                hardware issues. This can include regular cleaning, software
-                updates, and other preventive measures.
-              </p>
+              <hr />
               <h2>Logo usage guidelines</h2>
+              <img src="./img/logo-usage-guidelines.webp" alt="" />
               <p>
                 We can create usage guidelines for your logo to ensure that it
                 is consistently used across all platforms and in all contexts,
@@ -67,23 +155,30 @@
               <hr />
               <p>Our graphics design services include:</p>
               <h2>Print design</h2>
+              <img src="./img/printi-design.webp" alt="" />
               <p>
                 We can create stunning designs for print materials such as
                 brochures, business cards, flyers, and posters.
               </p>
+              <hr />
               <h2>Digital design</h2>
+              <img src="./img/digital-design.webp" alt="" />
               <p>
                 Our designers are experienced in creating engaging digital
                 designs for social media, website banners, and email marketing
                 campaigns.
               </p>
+              <hr />
               <h2>Illustration</h2>
+              <img src="./img/illustration-design.webp" alt="" />
               <p>
                 Our team of talented illustrators can create custom
                 illustrations that bring your brand to life and help tell your
                 story.
               </p>
+              <hr />
               <h2>Packaging design</h2>
+              <img src="./img/packagin-design.webp" alt="" />
               <p>
                 We can create eye-catching packaging designs that stand out on
                 the shelves and communicate the unique value of your product.
@@ -128,6 +223,7 @@
               </div>
             </div>
           </div>
+          <hr />
           <p>
             At our Logo Design and Graphics Design service, we take a
             collaborative approach to every project, working closely with you to
