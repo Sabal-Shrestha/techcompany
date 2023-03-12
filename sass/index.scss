@@ -149,6 +149,9 @@
         }
         h3 {
           transition: color 0.5s ease-in-out;
+          i {
+            display: block;
+          }
         }
         .ok {
           position: absolute;
