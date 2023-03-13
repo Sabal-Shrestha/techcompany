@@ -392,6 +392,8 @@
           border-top-left-radius: 1.5rem;
           border-top-right-radius: 1.5rem;
           width: 100%;
+          aspect-ratio: 1/1;
+          object-fit: cover;
           z-index: 0;
         }
         .social {
@@ -460,7 +462,6 @@
           font-size: var(--h6-fontsize);
           transition: 0.5s ease;
           color: #fff;
-          // color: #7a7e9a;
           font-weight: 300;
         }
       }
